@@ -1,9 +1,17 @@
 
+import {Counter} from "./components/Counter";
+import {Usuario} from "./components/usuario";
+
 
 function App() {
   return (
   <>
-   <h1>React + stypeScript</h1>  
+   <h1>React + TypeScript</h1> 
+   <hr/>
+    
+    <Counter />
+
+    <Usuario />
   </>
   );
 }
