@@ -5,10 +5,10 @@ const initialState = {
 }
 
 
-type ActionType =
+type ActionType=
 { Type: "incrementar"}
 { Type: "decrementar"}
-{ Type: "custom", payload: number};
+{ Type: "Custom", payload: number};
 
 const contadorReducer = (state:typeof initialState, action: ActionType) => {
  
@@ -20,6 +20,7 @@ const contadorReducer = (state:typeof initialState, action: ActionType) => {
 
           }
 
+          case "decrementar":
           return{
             ...state,
             contador: state.Contador - 1
@@ -60,7 +61,7 @@ export const ContadorRef = () =>{
     </button>
     <button className="btn btn-outline-primary"
 
-     onClick={ () => dispatch ({ type: "decrementar" }) }>
+     onClick={ () => dispatch ({ Type: "decrementar" }) }>
        +-
     </button>
 

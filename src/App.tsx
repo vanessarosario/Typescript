@@ -4,6 +4,8 @@ import {Usuario} from "./components/usuario";
 
 import { TimerPadre } from "./components/TimerPadre";
 import { ContadorRef } from "./components/ContadorRef";
+import { Formulario } from "./components/formulario2";
+
 
 
 
@@ -27,6 +29,15 @@ function App() {
   <ContadorRef />
 
 
+<h2>CustomHooks</h2>
+<hr/>
+
+<Formulario />
+
+<br/>
+<br/>
+<br/>
+<br/>
   </>
 );
 }
